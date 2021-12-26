@@ -1,0 +1,45 @@
+#Function check the prime or not
+
+def prime(n):
+f=0
+for i in range(2,n):
+if(n%i==0):
+f=1
+break
+if(f==0):
+print("Number is prime")
+else:
+print("Number is not prime")
+n=int(input("Enter the number:"))
+prime(n)
+
+#Function to check whether a number is perfect or not
+
+def perfect(num):
+s=0
+for i in range(1,num):
+if(num%i==0):
+s=s+i
+if(s==num):
+print("Number is perfect")
+else:
+print("Number is not perfect")
+num=int(input("Enter the number:"))
+perfect(num)
+
+# Program that takes a list and returns a new list with unique element of the first
+
+def unique_lst(lst):
+x=[]
+for i in lst:
+if i not in x:
+x.append(i)
+print("Unique Elements:",x)
+lst=[]
+n=int(input("Enter the limit:"))
+print("Enter the list elements:")
+for i in range(n):
+ele=int(input())
+lst.append(ele)
+print("Original list:",lst)
+unique_lst(lst)

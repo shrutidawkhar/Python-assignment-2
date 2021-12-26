@@ -1,0 +1,38 @@
+#Reverse of string
+
+def rev(s):
+l=len(s)
+x=s[::-1]
+print("Reverse string:",x)
+s=input("Enter String::")
+rev(s)
+
+# Write a python program to find the max of three numbers
+
+def max(a,b,c):
+if(a>b and a>c):
+print("A is Maximum=",a)
+elif(b>a and b>c):
+print("B is Maximum=",b)
+else:
+print("C is Maximum=",c)
+
+a=int(input("Enter the 1st no:"))
+b=int(input("Enter the 2nd number:"))
+c=int(input("Enter the 3rd number:"))
+max(a,b,c)
+
+#Python function to sum of all the list element
+
+def sum_lst(list1):
+sumoflist=sum(list1)
+print("Sum of list:",sumoflist)
+n=int(input("Enter the limit:"))
+list1=[]
+print("Enter the list elements:")
+for i in range(0,n):
+e=int(input())
+list1.append(e)
+print("original list:::",list1)
+sum_lst(list1)
+

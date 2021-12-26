@@ -1,0 +1,32 @@
+#Check whether string is symmetrical pallindrome
+
+
+str=input("Enter the String::")
+for i in range(int(len(str))):
+if(str[i]!=str[len(str)-i-1]):
+print("String is not Pallindrome")
+Break
+else:
+print("String is pallindrome")
+break
+
+#Remove i'th character from string
+
+test=input("Enter the string:")
+print("Original String:",test)
+new=""
+pos=int(input("Enter the position:"))
+for i in range(len(test)):
+if(i!=pos):
+new=new+test[i]
+print("After the removal of character:")
+
+#Reverse words in a given string
+
+
+str=input("Enter String::")
+s=str.split()
+print("Split words:",s)
+rev=' '.join(reversed(s))
+print(rev)
+
